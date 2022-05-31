@@ -3,6 +3,7 @@ import { Banner } from "./Banner";
 import { Button } from "./Button";
 import { Cards } from "./Cards";
 import { CustomHeader } from "./CustomHeader";
+import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { Pics } from "./Pics";
 import { ProductRange } from "./Product Range";
@@ -11,17 +12,14 @@ import Slider from "./Slider";
 import { Topproducts } from "./Topproducts";
 
 export const Home = () => {
-    return (
-        <div>
-          <CustomHeader />
-            <Header />
-            <div className="container">
+  return (
+    <div>
+      <CustomHeader />
+      <Header />
+      <div className="container">
         <div className="flex justify-center">
-            <Slider />
-
-            </div>
-
-         
+          <Slider />
+        </div>
 
         <SlideBanner />
 
@@ -31,7 +29,7 @@ export const Home = () => {
         <div className="float-none flex justify-center ">
           <h2 className="font-bold text-2xl">
             Get Out Back and Stay There!
-            <span className="font-bold text-blue-500">
+            <span className="font-bold text-blue">
               {" "}
               With Home of 12Volt
             </span>
@@ -43,75 +41,60 @@ export const Home = () => {
         <div className="float-none flex justify-center">
           <h1 className="text-2xl text-red">
             {" "}
-            ~~ + <a class="underline decoration-red-500"> </a> ~~{" "}
+            ── + <a class="underline decoration-red-500"> </a> ──{" "}
           </h1>
         </div>
 
         <br></br>
 
         <div className="flex justify-center ml-14">
-        <Pics />
-
+          <Pics />
         </div>
 
-        
-
         <br></br>
-
-        
-          
-        
 
         <ProductRange />
 
         <div className="float-none flex justify-center">
           <h1 className="text-2xl text-red">
             {" "}
-            ~~ + <a class="underline decoration-red-500"> </a> ~~{" "}
+            ── + <a class="underline decoration-red-500"> </a> ──{" "}
           </h1>
         </div>
 
         <br></br>
 
-        <div className="flex justify-center">
-        
-        <Cards />
 
-
+        <div className="flex justify-center flex-wrap">
+          <Cards />
         </div>
 
         <br></br>
 
         <Button />
 
-        
-
         <br></br>
 
         <div className="float-none flex justify-center ">
-          <h2 className="font-bold text-4xl">
-            Top Rated products
-            </h2>
-            </div>
+          <h2 className="font-bold text-4xl">Top Rated products</h2>
+        </div>
 
-            <div className="float-none flex justify-center">
+        <div className="float-none flex justify-center">
           <h1 className="text-2xl text-red">
             {" "}
-            ~~ + <a class="underline decoration-red-500"> </a> ~~{" "}
+            ── + <a class="underline decoration-red-500"> </a> ──{" "}
           </h1>
         </div>
         <br></br>
 
         <div className="flex justify-center">
-            <Topproducts />
+          <Topproducts />
         </div>
 
+        <br></br>
 
-
-        
-
-
-        </div>
-        </div>
-    );
+        <Footer />
+      </div>
+    </div>
+  );
 };
